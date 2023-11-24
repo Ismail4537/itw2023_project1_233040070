@@ -7,9 +7,12 @@
     <title>Portofolio</title>
 </head>
 <body>
-    <div class="gradient">
+    <div class="home">
+        <div class="header">
+            <img src="img/foto.png" class="pp" alt="">
+        </div>
+        <h1 class="judul">Ismail Abdul Fathan</h1>
         <nav>
-            <h1 class="jududl">Portofolio</h1>
             <ul>
                 <li>
                     <a href="#profile">Profile</a>
@@ -28,62 +31,103 @@
                 </li>
             </ul>
         </nav>
-        <div class="pp">
-            <img src="img/foto.png" alt="">
+        <div class="overlay" id="profile">
+            <div class="overHeader">
+                <h1>Profile</h1>
+                <div class="close">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam pariatur sit exercitationem impedit, excepturi nulla eos neque est vel quia voluptate odio facilis modi perferendis mollitia repudiandae numquam. Tempora, nesciunt!</p>
         </div>
-        <div class="content" id="profile">
-            <h1>Profile</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae repellendus modi sint vel accusamus corrupti eos excepturi quibusdam fugit pariatur. Facere pariatur quis numquam nobis id reiciendis aliquid, voluptatem at.</p>
+        <div class="overlay" id="about">
+            <div class="overHeader">
+                <h1>About</h1>
+                <div class="close">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam pariatur sit exercitationem impedit, excepturi nulla eos neque est vel quia voluptate odio facilis modi perferendis mollitia repudiandae numquam. Tempora, nesciunt!</p>
         </div>
-        <div class="content" id="about">
-            <h1>About</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae repellendus modi sint vel accusamus corrupti eos excepturi quibusdam fugit pariatur. Facere pariatur quis numquam nobis id reiciendis aliquid, voluptatem at.</p>
-        </div>
-        <div class="content" id="skills">
-            <h1>Skills</h1>
+        <div class="overlay" id="skills">
+            <div class="overHeader">
+                <h1>Skills</h1>
+                <div class="close">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
             <ul>
                 <li><img src="img/HTML5_logo.png" alt=""></li>
                 <li><img src="img/CSS3_logo.png" alt=""></li>
                 <li><img src="img/JavaScript-logo.png" alt=""></li>
             </ul>
         </div>
-        <div class="content" id="tools">
-            <h1>Tools</h1>
+        <div class="overlay" id="tools">
+            <div class="overHeader">
+                <h1>Tools</h1>
+                <div class="close">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
             <ul>
-                <li><img src="img/Logo_Chrome.png" alt=""></li>
                 <li><img src="img/visual-studio-code-logo.png" alt=""></li>
-                <li><img src="img/gitbash-logo.png" alt=""></li>
+                <li><img src="img/Logo_Chrome.png" alt=""></li>
+            </ul>
+            <ul>
                 <li><img src="img/Xampp-logo.png" alt=""></li>
+                <li><img src="img/gitbash-logo.png" alt=""></li>
             </ul>
         </div>
-        <div class="footer" id="contact">
-            <h1>Contact Me</h1>
-            <form action="">
-                <table>
-                    <tr>
-                        <td>Name</td>
-                        <td>:</td>
-                        <td><input type="text" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>:</td>
-                        <td><input type="email" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>Message</td>
-                        <td>:</td>
-                        <td><textarea name="" id="" cols="18" rows="10"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"  align="center">
-                            <button>
-                                <input type="submit" value="Send">
-                            </button>
-                        </td>
-                    </tr>
-                </table>
-            </form>
+        <div class="overlay" id="contact">
+            <div class="overHeader">
+                <h1>Contact Me</h1>
+                <div class="close">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="wraper">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td><input type="text" name="name" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td><input type="email" name="email" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>Message</td>
+                            <td>:</td>
+                            <td><textarea name="" id="" cols="18" rows="10"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <input type="submit" value="Send" class="submit">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <ul>
+                    <li><img src="img/Logo-WA-Hitam-Putih.png" alt=""></li>
+                    <li><img src="img/logo-ig.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2023</p>
         </div>
     </div>
 </body>
