@@ -1,153 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: solid; */
+}
 body{
-    background-color: dimgray;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url(../img/bg.png);
-    background-size: cover;
-    overflow-x: hidden;
+    background: aquamarine;
+    background-size: auto;
 }
-/* home */
-.home{
-    background: linear-gradient(rgba(124, 124, 124, 0), rgb(165, 165, 165));
-    border: 5px solid rgb(93, 93, 93);
-    border-top: 0;
-    border-radius: 5%;
+.gradient{
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+}
+nav{
     text-align: center;
-    margin: 40px;
-    padding: 25px;
-    overflow: hidden;
-    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    color: black;
+    border-bottom: 5px solid;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
 }
-.home ul li{
-    display: inline-block;
-    padding-right: 30px;
+nav ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
 }
-.home ul li a{
-    font-size: 20px;
+nav ul li a{
     color: black;
     text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
 }
-.home ul li .navbar{
-    transition: .3s;
-}
-.home ul li .navbar:hover{
-    text-shadow: 0 0 10px white;
-}
-.home .pp{
-    background-color: rgb(236, 195, 143);
-    background: linear-gradient(
-        rgba(236, 195, 143, 0), 
-        rgb(236, 195, 143), 
-        rgb(222, 236, 143), 
-        rgb(20, 0, 168));
-    border: 5px solid rgb(150, 150, 150);
-    border-top: 0;
-    box-shadow: 0 0 10px 5px rgb(104, 104, 104),
-                inset 0 10px 5px rgb(104, 104, 104);
-    border-radius: 100%;
-    width: 300px;
-    margin: auto;
-}
-.home .copy{
-    font-size: 10px;
-    margin-bottom: -10px;
-}
-/* overlay */
-.overlay{
-    width: 400px;
-    height: 0;
-    bottom: 0;
-    left: 80px;
-    position: absolute;
-    overflow: hidden;
-    z-index: -9999;
-    text-align: center;
-    opacity: 0;
-    transition: .5s;
+table{
     border: solid;
 }
-.overlay:target{
-    animation: slideUpFade .5s;
-    opacity: 1;
-    width: 400px;
-    height: auto;
-    left: 80px;
-    top: 80px;
-    z-index: 9999;
+.pp{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pp img{
+    width: 300px;
+    border: 5px solid;
+    border-top: 0;
+    border-radius: 100%;
+    background: linear-gradient(rgba(50, 50, 181, .0),rgba(50, 50, 181, .5));
+}
+.content{
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 300px 10px;
+}
+.content p{
+    font-size: 25px;
     text-align: justify;
 }
-.tools,
-.skills{
-    width: 395px;
-    height: 300px;
-    overflow: 0;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 12px;
-}
-.tools{
-    display: flex;
-}
-.skills{
-    margin: 10px auto;
-    display: flex;
-
-}
-#contact table{
+.content h1{
     text-align: center;
 }
-/* Animation */
-@keyframes slideUpFade{
-    0%{
-        opacity: 0;
-        margin-top: 20px;
-    }
-    100%{
-        opacity: 1;
-        margin-top: 0;
-    }
+#skills ul,
+#tools ul{
+    margin: 100px 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
 }
-/* Responsive */
-/* tablet */
-@media screen and (max-width: 768px) {
-    .home{
-        height: 1000px;
-    }
-    .overlay:target{
-        top: 300px; 
-    }
-    .overlay{
-        width: auto;
-        left: 10px;
-        right: 10px;
-    }
-    .overlay:target{
-        top: 460px; 
-        width: auto;
-        left: 10px;
-        right: 10px;
-    }
+.footer{
+    color: rgb(60, 60, 60);
+    padding: 15px 20px;
+    box-shadow: 0 0 5px 10px rgb(55, 30, 0);
+    background: linear-gradient(rgb(55, 30, 0), rgb(0, 0, 0));
 }
-/* mobile */
-@media screen and (max-width: 576px) {
-    .home{
-        height: 700px;
-    }
-    .home .pp{
-        width: 200px;
-    }
-    .overlay{
-        width: auto;
-        left: 10px;
-        right: 10px;
-    }
-    .overlay:target{
-        top: 400px; 
-        height: 300px;
-        width: auto;
-        left: 10px;
-        right: 10px;
-    }
-    .tools img{
-        width: 50px;
-    }
+.footer h1{
+    text-align: center;
+    padding-bottom: 20px;
 }
