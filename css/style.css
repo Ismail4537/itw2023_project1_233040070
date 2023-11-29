@@ -104,7 +104,11 @@ nav ul li a:hover{
     bottom: 0;
     z-index: 9;
     opacity: 1;
-    background: linear-gradient(to right, rgb(192, 192, 192), #ffffff90, #ffffff90, rgb(192, 192, 192));
+    background: linear-gradient(to right, rgb(192, 192, 192), #ffffffb7, #ffffffb7, rgb(192, 192, 192));
+}
+#profile table{
+    text-align: justify;
+    font-size: 20px;
 }
 #skills:target,
 #tools:target,
@@ -146,15 +150,11 @@ nav ul li a:hover{
     position: absolute;
     margin-left: 10px;
     padding: 5px;
-    display: none;
+    display: inline;
     border-radius: 15px;
 }
 .adress #ig p{
     width: 125px;
-}
-.adress #ig:hover p,
-.adress #wa:hover p{
-    display: inline;
 }
 /* Close */
 .overHeader{
@@ -232,7 +232,10 @@ nav ul li a:hover{
     #tools:target,
     #contact:target{
     width: 250px;
-}
+    }
+    #profile table{
+        font-size: 15px;
+    }
     #skills ul{
         display: flex;
         flex-direction: column;
@@ -244,11 +247,11 @@ nav ul li a:hover{
     .wraper{
         flex-direction: column;
     }
-    .wraper ul{
-        flex-direction: row;
+    .wraper img{
+        width: 25px;
     }
-    .adress #ig:hover p,
-    .adress #wa:hover p{
-        display: block;
-}
+    .adress p{
+        position: relative;
+        font-size: 15px;
+    }
 }
