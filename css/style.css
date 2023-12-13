@@ -205,6 +205,9 @@ nav ul li a:hover {
   .pp {
     width: 200px;
   }
+  .pp:hover {
+    width: 210px;
+  }
   .home {
     justify-content: center;
     align-items: center;
@@ -226,6 +229,9 @@ nav ul li a:hover {
 @media screen and (max-width: 576px) {
   .pp {
     width: 150px;
+  }
+  .pp:hover {
+    width: 160px;
   }
   nav ul {
     flex-direction: column;
