@@ -8,7 +8,6 @@ body {
   background-image: url(../img/bg.png);
   background-size: cover;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  overflow-y: hidden;
 }
 .header {
   display: flex;
