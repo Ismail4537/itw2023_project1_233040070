@@ -238,6 +238,7 @@ nav ul li a:hover {
   }
   nav ul {
     flex-direction: column;
+    width: 100px;
   }
   nav ul li {
     padding: 10px 0;
