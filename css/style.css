@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  /* border: solid; */
 }
 body {
   background-image: url(../img/bg.jpg);
@@ -86,6 +85,7 @@ nav ul li a:hover {
   margin-top: -1000px;
   padding: 15px;
   height: 0;
+  right: 0;
   text-align: justify;
   border: 5px solid rgb(66, 66, 66);
   border-top: 0;
