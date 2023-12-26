@@ -16,7 +16,6 @@ body {
 }
 .pp {
   margin: 20px;
-  margin-left: 0;
   width: 300px;
   border: 5px solid rgb(156, 156, 156);
   box-shadow: 0 0 10px, inset 0 0 20px;
